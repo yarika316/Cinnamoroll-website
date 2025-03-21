@@ -33,4 +33,67 @@ document.getElementById('check-birthday').addEventListener('click', () => {
   }
 });
 
+// Product Filtering
+document.querySelectorAll('.category-btn').forEach(button => {
+  button.addEventListener('click', () => {
+    // Remove active class from all buttons
+    document.querySelectorAll('.category-btn').forEach(btn => btn.classList.remove('active'));
+    // Add active class to the clicked button
+    button.classList.add('active');
+
+    const category = button.dataset.category;
+    document.querySelectorAll('.product').forEach(product => {
+      if (category === 'all' || product.dataset.category === category) {
+        product.style.display = 'block';
+      } else {
+        product.style.display = 'none';
+      }
+    });
+  });
+});
+
+// Shopping Cart
+let cart = [];
+let total = 0;
+
+document.querySelectorAll('.add-to-cart').forEach(button => {
+  button.addEventListener('click', () => {
+    const product = button.parentElement;
+    const name = product.querySelector('h3').textContent;
+    const price = parseFloat(product.querySelector('p').textContent.replace('$', ''));
+
+    // Add item to cart
+    cart.push({ name, price });
+    total += price;
+
+    // Update cart display
+    updateCart();
+  });
+});
+
+function updateCart() {
+  const cartItems = document.getElementById('cart-items');
+  const cartTotal = document.getElementById('cart-total');
+
+  // Clear current cart items
+  cartItems.innerHTML = '';
+
+  // Display cart items
+  cart.forEach(item => {
+    const itemDiv = document.createElement('div');
+    itemDiv.textContent = `${item.name} - $${item.price.toFixed(2)}`;
+    cartItems.appendChild(itemDiv);
+  });
+
+  // Update total
+  cartTotal.textContent = total.toFixed(2);
+}
+
+// Checkout Button
+document.getElementById('checkout').addEventListener('click', () => {
+  alert(`Thank you for your purchase! Total: $${total.toFixed(2)}`);
+  cart = [];
+  total = 0;
+  updateCart();
+});
 

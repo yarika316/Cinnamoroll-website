@@ -375,3 +375,123 @@ footer {
   background-color: #cffefc; /* Slightly darker pastel blue */
   color: #333;
 }
+
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lucida Handwriting', cursive, sans-serif;
+  background-color: #caf3ff; /* Pastel blue background */
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #ff69b4;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #cadcff; /* Slightly darker pastel blue */
+}
+
+header .logo img {
+  width: 100px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.hero {
+  text-align: center;
+  padding: 5rem 1rem;
+  background: url('https://i.imgur.com/cloud-background.jpg') no-repeat center center/cover;
+  color: white;
+}
+
+.categories {
+  text-align: center;
+  padding: 2rem;
+  background-color: #e3f2fd; /* Lighter pastel blue */
+}
+
+.category-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.category-btn {
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.category-btn.active {
+  background-color: #ff1493; /* Darker pink for active button */
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+  background-color: #e3f2fd;
+}
+
+.product {
+  text-align: center;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+  width: 100%;
+  max-width: 150px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.add-to-cart {
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+.cart {
+  text-align: center;
+  padding: 2rem;
+  background-color: #e3f2fd;
+}
+
+#cart-items {
+  margin: 1rem 0;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #cadcff;
+  color: #333;
+}

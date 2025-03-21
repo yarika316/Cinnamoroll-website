@@ -298,3 +298,80 @@ footer {
   font-size: 1.2rem;
   color: #ff69b4; /* Highlighted message */
 }
+
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lucida Handwriting', cursive, sans-serif;
+  background-color: #ceedff; /* Pastel blue background */
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #ffcaca;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #cffefc; /* Slightly darker pastel blue */
+}
+
+header .logo img {
+  width: 100px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.hero {
+  text-align: center;
+  padding: 5rem 1rem;
+  background: url('https://i.imgur.com/cloud-background.jpg') no-repeat center center/cover;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.introduction, .personality, .fun-facts, .gallery {
+  padding: 2rem;
+  text-align: center;
+  background-color: #e3f2fd; /* Lighter pastel blue */
+}
+
+.introduction img {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.personality ul, .fun-facts ol {
+  list-style-position: inside;
+  text-align: left;
+  margin: 1rem auto;
+  max-width: 500px;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #cffefc; /* Slightly darker pastel blue */
+  color: #333;
+}

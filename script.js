@@ -1,12 +1,3 @@
-// Smooth scrolling for navigation links
-document.querySelectorAll('nav a').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-    const targetId = this.getAttribute('href').substring(1);
-    const targetElement = document.getElementById(targetId);
-    targetElement.scrollIntoView({ behavior: 'smooth' });
-  });
-});
 
 // Alert when "Learn More" or "Shop Now" buttons are clicked
 document.getElementById('learn-more').addEventListener('click', () => {
@@ -42,12 +33,4 @@ document.getElementById('check-birthday').addEventListener('click', () => {
   }
 });
 
-// Smooth Scrolling for Navigation Links
-document.querySelectorAll('nav a').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-    const targetId = this.getAttribute('href').substring(1);
-    const targetElement = document.getElementById(targetId);
-    targetElement.scrollIntoView({ behavior: 'smooth' });
-  });
-});
+

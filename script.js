@@ -97,17 +97,3 @@ document.getElementById('checkout').addEventListener('click', () => {
   updateCart();
 });
 
-// Handle Contact Form Submission
-document.getElementById('contact-form').addEventListener('submit', function (e) {
-  e.preventDefault(); // Prevent the form from refreshing the page
-
-  // Simulate sending the message
-  const formMessage = document.getElementById('form-message');
-  formMessage.textContent = 'Thank you for your message! We’ll get back to you soon. 💌';
-
-  // Reset the form after 3 seconds
-  setTimeout(() => {
-    formMessage.textContent = '';
-    this.reset();
-  }, 3000);
-});

@@ -4,7 +4,124 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact - Cinnamoroll Official Website</title>
-  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'lucida handwriting', cursive, sans-serif;
+  background-color: #cafdff; /* Pastel blue background */
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #ff69b4;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #cadcff; /* Slightly darker pastel blue */
+}
+
+header .logo img {
+  width: 100px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.hero {
+  text-align: center;
+  padding: 5rem 1rem;
+  background: url('https://i.imgur.com/cloud-background.jpg') no-repeat center center/cover;
+  color: white;
+}
+
+.contact-form-section {
+  text-align: center;
+  padding: 2rem;
+  background-color: #e3f2fd; /* Lighter pastel blue */
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#contact-form input,
+#contact-form textarea {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#contact-form button {
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#form-message {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #ff69b4;
+}
+
+.social-media {
+  text-align: center;
+  padding: 2rem;
+  background-color: #e3f2fd;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.social-links a {
+  font-size: 2rem; /* Icon size */
+  color: #ff69b4; /* Pink color for icons */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-links a:hover {
+  transform: scale(1.2); /* Enlarge on hover */
+  color: #ff1493; /* Darker pink on hover */
+}
+
+.map {
+  text-align: center;
+  padding: 2rem;
+  background-color: #e3f2fd;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #cadcff;
+  color: #333;
+}
+</style>
   <!-- Font Awesome CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>

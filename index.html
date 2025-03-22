@@ -55,10 +55,11 @@
   <!-- Contact Section -->
   <section id="contact" class="contact">
     <h2>Contact Us</h2>
-    <form id="contact-form">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message"></textarea>
+    <form id="contact-form" action="https://formspree.io/f/xqapprlv"
+  method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message"></textarea>
       <button type="submit">Send Message</button>
     </form>
   </section>
